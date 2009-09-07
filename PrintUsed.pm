@@ -96,14 +96,18 @@ modules list.
 
 =back
 
-=head1 SEE ALSO
+=head1 DEVELOPMENT NOTES
 
-A more sophisticated way of finding module dependencies without having
-to execute the script is performed by L<Module::ScanDeps>.
+Please report any bugs sing the CPAN RT system. The development repository for this module is hosted on GitHub: L<http://github.com/crenz/Module-PrintUsed/>.
 
 =head1 THANKS
 
 Thanks to Slaven Rezić for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable, and for alerting me to warnings caused by autosplitted modules.
+
+=head1 SEE ALSO
+
+A more sophisticated way of finding module dependencies without having
+to execute the script is performed by L<Module::ScanDeps>.
 
 =head1 AUTHOR
 
