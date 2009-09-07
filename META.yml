@@ -1,9 +1,23 @@
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+---- #YAML:1.0
 name:         Module-PrintUsed
-version:      0.03
+abstract:     Prints modules used by your script when your script ends
+author:
+  - Christian Renz <crenz@cpan.org>
+license: perl
+distribution_type: module
+version:      0.04
 version_from: PrintUsed.pm
 installdirs:  site
-requires:
-
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.12
+requires:
+  perl: 5.006
+recommends:
+  Test::Pod::Coverage 1.04
+build_requires:
+  Test: 0
+resources:
+  license: http://dev.perl.org/licenses/
+meta-spec:
+  version: 1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+generated_by: Module::Build version 0.20
