@@ -15,7 +15,12 @@ sub ModulesList {
         my $name = $_;
         $name =~ s|[\\/]|::|g;
         $name =~ s|\.pm$||;
-        my $version = eval " \$$name\::VERSION " || '';
+        {
+            # Prevent warnings caused by autosplitted modules.
+            # See RT#48573.
+            no warnings;
+            my $version = eval " \$$name\::VERSION " || '';
+        }
         push @modules, { name => $name, version => $version,
             path => $INC{$_} };
     }
