@@ -6,7 +6,7 @@ use warnings;
 
 our @ISA = qw();
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub ModulesList {
     my @modules;
@@ -54,12 +54,22 @@ Module::PrintUsed - Prints modules used by your script when your script ends
 
 =head1 DESCRIPTION
 
-This module helps you to check which modules (and scripts) were C<use>d or
-C<require>d during the runtime of your script. It prints the list of modules
-to STDERR, including version numbers and paths.
+This module helps you to check which modules (and scripts) were C<use>d or C<require>d during the runtime of your script. It prints the list of modules to STDERR, including version numbers and paths.
 
-Module::PrintUsed contains an C<END {}> block that will be executed when
-your script exits (even if it died).
+Module::PrintUsed contains an C<END {}> block that will be executed when your script exits (even if it died).
+
+=head2 USAGE VIA PERL5OPT
+
+It is possible to print a list of modules used even without modifying your perl scripts or programs. To achieve this, set the PERL5OPT environment variable to "-MModule::PrintUsed".
+
+Unix command-line example:
+
+    env PERL5OPT=-MModule::PrintUsed perl myscript.pl
+
+Windows command-line example:
+
+    set PERL5OPT=-MModule::PrintUsed
+    perl myscript.pl
 
 =head1 FUNCTIONS
 
@@ -84,13 +94,17 @@ modules list.
 A more sophisticated way of finding module dependencies without having
 to execute the script is performed by L<Module::ScanDeps>.
 
+=head1 THANKS
+
+THanks to Slaven Rezić for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable.
+
 =head1 AUTHOR
 
 Christian Renz, E<lt>crenz @ web42.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2004 Christian Renz E<lt>crenz @ web42.comE<gt>. All rights reserved.
+Copyright 2004-2009 Christian Renz E<lt>crenz @ web42.comE<gt>. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
