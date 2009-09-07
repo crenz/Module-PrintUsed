@@ -101,7 +101,7 @@ to execute the script is performed by L<Module::ScanDeps>.
 
 =head1 THANKS
 
-THanks to Slaven Rezić for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable.
+Thanks to Slaven Rezić for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable, and for alerting me to warnings caused by autosplitted modules.
 
 =head1 AUTHOR
 
