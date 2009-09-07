@@ -7,7 +7,6 @@ license: perl
 distribution_type: module
 version:      0.04
 version_from: PrintUsed.pm
-installdirs:  site
 distribution_type: module
 requires:
   perl: 5.006
@@ -19,5 +18,5 @@ resources:
   license: http://dev.perl.org/licenses/
 meta-spec:
   version: 1.4
-  url: http://module-build.sourceforge.net/META-spec-v1.3.html
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
 generated_by: Module::Build version 0.20
