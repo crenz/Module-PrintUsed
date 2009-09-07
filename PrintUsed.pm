@@ -6,7 +6,7 @@ use warnings;
 
 our @ISA = qw();
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub ModulesList {
     my @modules;
@@ -86,11 +86,11 @@ to execute the script is performed by L<Module::ScanDeps>.
 
 =head1 AUTHOR
 
-Christian Renz, E<lt>crenz@web42.comE<gt>
+Christian Renz, E<lt>crenz @ web42.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2004 Christian Renz E<lt>crenz@web42.comE<gt>. All rights reserved.
+Copyright 2004 Christian Renz E<lt>crenz @ web42.comE<gt>. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 

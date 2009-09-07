@@ -1,5 +1,11 @@
 Revision history for Perl extension Module::PrintUsed.
 
+0.03  Sat Jun 6th, 2005
+    - Added POD tests, updated POD
+
+0.02  Thu Jun 22nd, 2004
+    - Refactored formatting code into FormattedModulesList()
+
 0.01  Sat Jun 12th, 2004
 	- original version
 
