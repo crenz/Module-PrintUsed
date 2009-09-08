@@ -6,7 +6,7 @@ use warnings;
 
 our @ISA = qw();
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub ModulesList {
     my @modules;
@@ -102,7 +102,7 @@ Please report any bugs sing the CPAN RT system. The development repository for t
 
 =head1 THANKS
 
-Thanks to Slaven Rezić for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable, and for alerting me to warnings caused by autosplitted modules.
+Thanks to Slaven ReziÄ for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable, and for alerting me to warnings caused by autosplitted modules.
 
 =head1 SEE ALSO
 
