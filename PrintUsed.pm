@@ -6,7 +6,7 @@ use warnings;
 
 our @ISA = qw();
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 sub ModulesList {
     my @modules;
@@ -51,6 +51,9 @@ END {
 
 1;
 __END__
+
+=encoding utf-8
+
 =head1 NAME
 
 Module::PrintUsed - Prints modules used by your script when your script ends
@@ -98,11 +101,11 @@ modules list.
 
 =head1 DEVELOPMENT NOTES
 
-Please report any bugs sing the CPAN RT system. The development repository for this module is hosted on GitHub: L<http://github.com/crenz/Module-PrintUsed/>.
+Please report any bugs using the CPAN RT system. The development repository for this module is hosted on GitHub: L<http://github.com/crenz/Module-PrintUsed/>.
 
 =head1 THANKS
 
-Thanks to Slaven ReziÄ for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable, and for alerting me to warnings caused by autosplitted modules.
+Thanks to Slaven Rezić for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable, and for alerting me to warnings caused by autosplitted modules.
 
 =head1 SEE ALSO
 
@@ -115,7 +118,7 @@ Christian Renz, E<lt>crenz @ web42.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2004-2009 Christian Renz E<lt>crenz @ web42.comE<gt>. All rights reserved.
+Copyright 2004-2010 Christian Renz E<lt>crenz @ web42.comE<gt>. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 

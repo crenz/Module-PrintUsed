@@ -17,7 +17,7 @@ WriteMakefile1(
     VERSION_FROM      => 'PrintUsed.pm', # finds $VERSION
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ABSTRACT_FROM => 'PrintUsed.pm',
-    AUTHOR => 'Christian Renz <crenz@nonet>',
+    AUTHOR => 'Christian Renz <crenz@web42.com>',
 );
 
 sub WriteMakefile1 {  #Written by Alexandr Ciornii, version 0.21. Added by eumm-upgrade.
