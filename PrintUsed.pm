@@ -6,7 +6,7 @@ use warnings;
 
 our @ISA = qw();
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 sub ModulesList {
     my @modules;
@@ -35,8 +35,13 @@ sub FormattedModulesList {
     my @modules = ModulesList();
     
     foreach (@modules) {
-        $text .= " - $_->{name} " . (" " x (25 - length($_->{name}))) .
-            "$_->{version} " . (" " x (8 - length($_->{version}))) .
+    	my $lengthName = 25 - length($_->{name});
+    	$lengthName = 0 unless $lengthName > 0;
+    	my $lengthVersion = 8 - length($_->{version});
+    	$lengthVersion = 0 unless $lengthVersion > 0;
+    	
+        $text .= " - $_->{name} " . (" " x $lengthName) .
+            "$_->{version} " . (" " x $lengthVersion) .
             "$_->{path}\n";
     }
     $text .= "\n";
@@ -51,6 +56,8 @@ END {
 
 1;
 __END__
+=encoding UTF-8
+
 =head1 NAME
 
 Module::PrintUsed - Prints modules used by your script when your script ends
@@ -102,7 +109,7 @@ Please report any bugs sing the CPAN RT system. The development repository for t
 
 =head1 THANKS
 
-Thanks to Slaven ReziÄ for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable, and for alerting me to warnings caused by autosplitted modules.
+Thanks to Slaven Rezić for pointing out that Module::PrintUsed can be used with the PERL5OPT environment variable, and for alerting me to warnings caused by autosplitted modules.
 
 =head1 SEE ALSO
 
@@ -115,7 +122,7 @@ Christian Renz, E<lt>crenz @ web42.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2004-2009 Christian Renz E<lt>crenz @ web42.comE<gt>. All rights reserved.
+Copyright 2004-2015 Christian Renz E<lt>crenz @ web42.comE<gt>. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
